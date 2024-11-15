@@ -1,0 +1,28 @@
+name: VCM
+description: A chat formatting plugin for LuckPerms.
+version: 3.6.4
+main: me.wikmor.vcm.VCM
+author: wikmor
+api-version: 1.13
+depend: [LuckPerms]
+softdepend: [PlaceholderAPI]
+commands:
+  vcm:
+    description: Reload the configuration.
+    permission: vcm.reload
+    usage: "Usage: /vcm reload"
+  setpronouns:
+    description: Set your pronouns.
+    permission: vcm.setpronouns
+    usage: "Usage: /setpronouns <pronouns>"
+  nick:
+    description: Set your nickname.
+    permission: vcm.nickname
+    usage: "Usage: /nick <nickname>"
+permissions:
+  vcm.chatbypass:
+    description: Allows bypassing the chat cooldown.
+    default: op
+  vcm.chatcool:
+    description: Enforces the chat cooldown.
+    default: true
